@@ -3,6 +3,7 @@ from tkinter import ttk
 
 import z_test
 import t_test
+import f_test
 
 window = Tk()
 window.title('Statistical Calculator')
@@ -17,6 +18,8 @@ tabs.add(z_tab, text = 'Z-test')
 t_tab = t_test.create_tab(tabs)
 tabs.add(t_tab, text = 'T-test')
 
+f_tab = f_test.create_tab(tabs)
+tabs.add(f_tab, text = 'F-test')
 
 tabs.columnconfigure([i for i in range(1,50)], weight=1, uniform='')
 tabs.rowconfigure([i for i in range(1,50)], weight=1, uniform='')

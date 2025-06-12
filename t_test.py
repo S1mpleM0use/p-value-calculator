@@ -75,12 +75,6 @@ def create_tab(parent_notebook):
     entry_for_population_mean = Entry(frame, font=('Consolas', 10))
     entry_for_population_mean.grid(column=1, row=1, sticky='N')
 
-    # label_for_population_standard_deviation = Label(frame, text='Enter the Population Standard Deviation (σ):',
-    #                                                 font=('Consolas', 10))
-    # label_for_population_standard_deviation.grid(column=2, row=0, padx=30)
-    # entry_for_population_standard_deviation = Entry(frame, font=('Consolas', 10))
-    # entry_for_population_standard_deviation.grid(column=2, row=1, sticky='N')
-
     calculate_data = Button(frame, width=35, text='Calculate sample average',
                             command=calculate_sample_average, font=('Consolas', 10))
     calculate_data.grid(column=0, row=2)
@@ -94,7 +88,7 @@ def create_tab(parent_notebook):
     t_test_label = Label(frame, font=('Consolas', 10))
     t_test_label.grid(column=1, row=3)
 
-    p_val_by_t = Button(frame, width=30, text='Calculate p-value from Z-test',
+    p_val_by_t = Button(frame, width=30, text='Calculate p-value from T-test',
                         command=calculate_p_val_t_stat, font=('Consolas', 10))
     p_val_by_t.grid(column=2, row=2)
     p_val_by_t_label = Label(frame, font=('Consolas', 10))
